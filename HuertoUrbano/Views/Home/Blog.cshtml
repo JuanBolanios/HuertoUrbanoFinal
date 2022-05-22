@@ -1,0 +1,405 @@
+﻿@model PublicacViewModel
+@{ ViewData["Title"] = "Huerto Urbano"; }
+
+<h2>Hortalizas recomendadas para plantar en Nuevo León</h2>
+<br>
+<form method="post" asp-controller="Home" asp-action="Blog" enctype="multipart/form-data">
+
+    <div class="form-group">
+        <label asp-for="TipoHortaliza"></label>
+        <select asp-for="TipoHortaliza" asp-items="Model.TipoHortalizas" class="form-control"></select>
+        <span asp-validation-for="TipoHortaliza" class="text=danger"></span>
+    </div>
+
+    <br><br>
+
+    <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <h3>Aguacate</h3>
+                <img src="/img/Aguacate.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    La siembra del aguacate se realiza a partir de una semilla, denominada hueso central,
+                    procedente del propio fruto. Se trata de la única forma de proceder al sistema de
+                    reproducción, tradicional, cuyos pasos son los siguientes:
+
+                <p>
+                    2.- Lo primero que debemos hacer es efectuar una selección de las semillas, limpiarlas
+                    quitando los residuos de pulpa, luego perforar con un corte de aproximadamente dos
+                    centímetros de grosor en la parte más delgada (parte superior), lo cual facilitará
+                    que la planta comience a brotar más fácilmente.
+                </p>        
+
+
+                <p>
+                    3.- Nos aconsejan hacer germinar la semilla en un recipiente con agua, mojando la parte
+                    plana (parte más gruesa) de la semilla.
+                </p>
+                <p>
+                    4.- Al comprobar que la raíz ya ha salido, llegando a los diez centímetros de largo,
+                    entonces será el momento para trasladarla a una maceta con tierra y sustrato de
+                    cultivo. Una buena composición incluye turba, compost con hojas, perlita, tierra
+                    negra, humus de lombriz, gallinácea, facilitando un drenaje necesario y al mismo
+                    tiempo realizando una función de absorción de agua, fortaleciendo y oxigenando la
+                    raíz.
+                </p>
+                <p>
+                    5.- No olvidemos que el hueso central, se introduce en la maceta, semillero, con la
+                    parte plana para el fondo, dejando la parte superior que se vea, recibiendo la luz,
+                    el riego o control de la humedad. Este proceso es básico en su proceso de arraigo y
+                    crecimiento.
+                </p>
+                <p>
+                    6.- La primavera es la mejor estación del año para sembrar el aguacate, evitando lugares
+                    fríos, las heladas son muy perjudiciales y nos harían perder la mayor parte de las
+                    semillas, la temperatura ideal sería de unos 20ºC.     
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Brócoli</h3>
+                <img src="/img/Brocoli.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    El brócoli se siembra a unos 2cm de profundidad en semillero al aire libre de abril a
+                    junio y de agosto a septiembre. Cuando las plantas alcanzan entre 10 y 15cm se
+                    trasplantan al aire libre en un marco de plantación en hileras, separados a unos
+                    50-60cm, debido a su gran porte.
+                    <br>
+                    Dado su alto porte, conviene recalzar las plantas, esto es añadir tierra a la base del
+                    tallo, evitando así que se tumben. Además, se benefician del acolchado o cobertura
+                    vegetal permanente, pues le ayudarán a mantener la humedad necesaria y un aporte de
+                    materia orgánica en continua degradación.
+                    <br>
+                    Un aspecto a tener en cuenta durante el cultivo es que el suelo siempre tiene que estar
+                    húmedo.
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Cilantro</h3>
+                <img src="/img/Cilantro.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    A la hora de cultivar cilantro con semillas, existen dos métodos para hacerlo: en maceta
+                    y en surcos. A continuación, vamos a contarte paso a paso cómo hacerlo de cada una de
+                    las formas.
+                    <br><br>
+                    Antes de comenzar, un dato importante: de cada semilla de cilantro que siembres, nacerán
+                    dos plantas. Este dato es clave al momento de decidir cuántas semillas vas a sembrar.
+                    <br>
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Calabacines</h3>
+                <img src="/img/calabacines.png" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    Los calabacines y otras calabazas no necesitan mucho trabajo de preparación. Por lo
+                    general, no toleran la tierra o el aire fríos ni las heladas y sus raíces no viven bien
+                    al trasplantarlas1. Todo esto es bueno para usted ya que podrá sembrar semillas de
+                    calabaza a finales de la primavera, después de que la tierra se haya calentado y sembrar
+                    sus semillas directamente en la tierra del jardín que recibe toda la luz solar. No hay
+                    necesidad de empezar a sembrar las semillas antes de tiempo en interiores o comprar
+                    plantas presembradas en una tienda de plantas.
+                    <br> <br>
+                    No siembre las semillas de calabaza hasta al menos dos semanas después de que la última
+                    helada esperada haya pasado por su región. Si no está seguro en qué fecha eso ocurrirá,
+                    el agente de extensión de su condado le puede ayudar. Cuando sea tiempo de sembrar,
+                    sería bueno que hiciera “siembras sucesivas”. <br>
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Fresa</h3>
+                <img src="/img/Fresa.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    Plantar y cultivar fresas resulta muy fácil y nos permitirá disfrutar de unos frutos
+                    mucho más sabrosos que los que podemos adquirir en cualquier establecimiento. Si
+                    dispones de una huerta o un jardín suficientemente grande, podrás plantarlas en el suelo
+                    pero también cabe la posibilidad de plantar fresas en tiestos y macetas.
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Habanero</h3>
+                <img src="/img/Habanero.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    Capsicum chinense es una especie de chile, de la cual existen variedades como el chile
+                    habanero, la más común, el ají panca y el ají limo. El chile habanero en lo particular
+                    es una de las variedades con mayor intensidad de sabor picante todo el género Capsicum.
+                    Los ejemplares inmaduros de esta variedad son de color verde, pero su color varía en la
+                    madurez. Los colores más comunes son anaranjados (semimaduros) y rojos (maduros), pero
+                    también existen en colores blanco, marrón, amarillo y rosados. <br>
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Lechuga</h3>
+                <img src="/img/Lechuga.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    Al llegar la primavera, la lechuga es uno de los cultivos que puede plantar más temprano
+                    al aire libre. En cuanto el suelo esté listo para labrar, ya puede sembrar las semillas
+                    de lechuga. Existen muchas variedades de lechugas, desde las especies que forman cabezas
+                    de lechuga hasta las que se dan en hojas y nunca se agrupan en cabezas. Y hasta puede
+                    comprar paquetes de semillas premezcladas que combinan colores desde rojo-morado hasta
+                    el verde, y texturas desde las hojas lisas hasta las rizadas.
+                    <br><br>
+                    Las semillas de lechugas pueden germinar en suelos con temperaturas de hasta 40°F
+                    (4,44°C), apenas unos grados por encima de la temperatura de congelación. Pero las
+                    condiciones óptimas se dan cuando la temperatura del aire alcanza de 60°F a 65°F
+                    (11,55°C a 18,33°C).1 Al igual que el repollo y otros vegetales de clima fresco, la
+                    lechuga florece en el clima primaveral fresco y luego puede volver a cosecharse en
+                    otoño. Hay incluso algunas variedades de lechuga que toleran más calor, pero la mayoría
+                    da cosechas rígidas, secas y amargas en el calor del verano. <br>
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Melón</h3>
+                <img src="/img/Melon.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    La siembra de la planta de los melones se realiza entre marzo y mayo en filas lejanas a
+                    un metro la una de la otra, sus raíces son fibrosas y largas. Se sugiere mantener las
+                    semillas alejadas por lo menos unos 50 cm una de la otra.
+                    <br><br>
+                    Este cultivo se desarrolla mejor en clima cálido, a pesar de que existen ciertos
+                    híbridos adaptados a climas templados. La temperatura ambiental adecuada está entre los
+                    18 °C y los 25 °C, el melón se puede cultivar además en invernadero calentado,
+                    sembrándolo en diciembre y haciendo el trasplante siempre en invernadero en el mes de
+                    enero.
+                    <br><br>
+                    El melón requiere de un suelo mullido, franco y franco arenoso, con una profundidad
+                    efectiva 60 cm, ricos en materia orgánica con un pH de 6.0 a 7.5; se adapta a otras
+                    condiciones de suelo siempre y cuando éstos sean sueltos y bien drenados.
+                    <br><br>
+                    El melón se cultiva prácticamente en todos los lugares del mundo que posean un clima
+                    cálido y poco lluvioso. Los principales productores mundiales son China, Irán y España,
+                    entre los numerosos países que cultivan la especie, el melón constituye una de las
+                    frutas más consumidas ya que ocupa el cuarto lugar a nivel mundial, después de las
+                    naranjas, los plátanos y las uvas. <br>
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Pepino</h3>
+                <img src="/img/Pepino.png" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    Para muchos jardineros, la cosecha de los pepinos cultivados en casa es uno de los
+                    momentos más esperados de la temporada de verano. Pero antes de disfrutar del sabor
+                    agradable y la sensación crujiente de la cosecha de pepinos, es necesario ensuciarse un
+                    poco las manos.
+
+                    Las atractivas plantas de pepinos se pueden cultivar en la tierra, en canteros elevados
+                    o en macetas. Para sacarle el mayor provecho a su cosecha, lea bien la etiqueta del
+                    paquete de semillas para elegir el tipo de pepino adecuado para su espacio y sus
+                    necesidades culinarias.
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Perejil</h3>
+                <img src="/img/Perejil.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    <strong>Tipos de suelo</strong> <br>
+                    El perejil se adapta con comodidad a todo tipo de suelos, aunque prefiere los que son
+                    profundos, ricos en humus, sueltos, frescos y muy bien abonados.
+                    <br><br>
+                    <strong>Clima</strong> <br>
+                    Este cultivo resiste cualquier tipo de clima, aunque se adapta mejor a los cálidos.
+                    Aunque hay que tener en cuenta que las plantas sembradas en verano tardarán de 14 a 16
+                    días en nacer, y las sembradas en invierno, en una zona cálida, un mes.
+                    <br><br>
+                    <strong>Siembra y trasplante</strong> <br>
+                    La siembra del perejil dependerá de cuando queramos obtener las plantas, aunque se suele
+                    realizar de febrero a septiembre.Se puede realizar en líneas que estén separadas entre
+                    sí de 15 a 20 cm, dejando de 5 a 8 cm entre plantas. Antes de plantar, la semilla se
+                    deberá poner en remojo durante 24 horas. No tiene necesidad de trasplante.
+                    <br><br>
+                    <strong>Riego</strong> <br>
+                    El perejil necesita de un riego frecuente pero en pocas cantidades, para asegurar una
+                    humedad constante.
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Rábano</h3>
+                <img src="/img/Rabano.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    <strong>Preparación del terreno</strong> <br>
+
+                    En primer lugar se realiza una labor profunda con volteo de la tierra (vertedera),
+                    siguiendo con una grada de disco y la aportación del abonado de fondo. A continuación se
+                    hacen caballones (acaballonadora) preparando unas bancadas de aproximadamente 1,80 m de
+                    ancho. <br><br>
+
+                    <strong>Siembra</strong> <br>
+
+                    La semilla conservada en buenas condiciones mantiene su viabilidad durante seis años. Se
+                    siembra de asiento, preferentemente en otoño, primavera e invierno. La semilla de
+                    rabanito generalmente se esparce a voleo a razón de 12 kg de semilla por hectárea. En
+                    cambio, los rábanos se suelen sembrar en líneas a 50 cm, empleando unos 8 kg por
+                    hectárea.
+                    Cuando se cultivan rabanitos es frecuente que, dado su rápido crecimiento, se hagan
+                    asociaciones, intercalando otras hortalizas de ciclo más largo, tales como zanahoria,
+                    remolacha, etc. <br><br>
+
+                    <strong>Labores</strong> <br>
+
+                    Se realizarán 1 ó 2 escardas y un ligero aporcado si las plantas están en línea.
+                    A los 15 ó 20 días de la siembra es conveniente aclarar las plantas, dejando los
+                    rabanitos distanciados a 5 cm y los rábanos a 10 cm. <br>
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Remolacha</h3>
+                <img src="/img/Remolacha.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    La remolacha (Beta Vulgaris) es un cultivo que se puede realizar en casi todo el año,
+                    aunque el mejor momento para sembrarla es durante el mes de abril ya que crece mejor en
+                    clima templado y húmedo. La temperatura ideal de cultivo es de entre 10º y 24º, sin
+                    embargo, se adapta muy bien al calor y puede llegar a resistir algunas heladas.
+                    <br>
+                    Se trata de un cultivo que generalmente necesita pocos cuidados y eso lo vuelve bastante
+                    sencillo para aquellos que se inician en la huerta.
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Sandía</h3>
+                <img src="/img/Sandia.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    La sandía es una planta rastrera anual de hasta cuatro metros, cuenta con tallos
+                    cubiertos de vello de un centímetro de diámetro aproximadamente y con zarcillos leñosos,
+                    además presenta hojas de hasta 20 centímetros de ancho por 15 centímetros de largo con
+                    sésiles por el haz con vello por el envés, pinnado-divididas. <br> <br>
+
+                    Esta planta también cuenta
+                    con flores solitarias amarillas de hasta cuatro centímetros de diámetro, estas aparecen
+                    en la misma planta aunque son completamente masculinas o femeninas (flores monoicas), si
+                    bien pueden darse casos más raros de hermafroditismo. Sus frutos son comestibles muy
+                    grandes (sandías) de hasta 80 centímetros de longitud más o menos, son esféricos u
+                    ovoides, lisos, de color verde uniforme o con bandas más oscuras. La sandía puede llegar
+                    a pesar hasta 20 kilogramos, aunque su peso medio es de 2,5 kilogramos, su pulpa va de
+                    color rojo a amarillo pasando por el rosa y tiene semillas de color negro (pepitas). Es
+                    un fruto de verano. <br>
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Tomate</h3>
+                <img src="/img/Tomate.png" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    Los tomates deben sembrarse cuando las últimas heladas ya han pasado, entre principios y
+                    mediados de primavera. Lógicamente, los meses concretos dependen mucho del clima
+                    específico de cada zona, por lo que lo más importante es asegurarse de que no vayamos a
+                    tener ya temperaturas por debajo de los cero grados.
+                    <br><br>
+                    Además, aunque es posible sembrar la tomatera directamente en el suelo, nosotros vamos a
+                    explicaros cómo sembrar primero en semillero, pudiendo sembrar así entre finales de
+                    invierno y principios de primavera. De esta forma, podremos avanzar todo el proceso
+                    entre 4 y 6 semanas, permitiéndonos disfrutar de nuestros tomates frescos mucho antes.
+                    Además, si en lo que piensas es en plantar tomates desde la planta ya algo desarrollada
+                    porque dispones del plantón de una tomatera, este rango de meses es también el más
+                    óptimo para ello. <br>
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Zanahoria</h3>
+                <img src="/img/Zanahoria.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    Es uno de los cultivos que, sí o sí, hay que tener en el huerto. Sembrar zanahorias es
+                    una práctica más que común por múltiples motivos. Por un lado, porque es un cultivo que
+                    se da durante todo el año. Por otro, porque su demanda de mantenimiento y necesidades es
+                    prácticamente mínima. A pesar de esta aparente sencillez, lo cierto es que son muchos
+                    los amantes del huerto que se frustran con el cultivo de esta hortaliza. Ya sea porque
+                    las semillas no acaban de germinar o porque el tamaño que alcanzan los frutos no es el
+                    esperado, muchas veces eliminamos esta hortaliza de nuestros cultivos. Por eso y para
+                    evitar este abandono, queremos dedicar algo de tiempo a cuándo y cómo sembrar zanahorias
+                    correctamente.
+                    <br><br>
+                    Evitar la sensación de fracaso que acabamos de comentar pasa, irremediablemente, por
+                    saber cómo sembrar zanahorias. Una tarea que no entraña ni mucha dificultad ni mucho
+                    tiempo, pero sí implica conocer determinadas pautas. Unas directrices que marcan la
+                    diferencia entre lograr las zanahorias que esperamos y llevarnos el disgusto cuando las
+                    saquemos de la tierra. Y seamos francos: no hay huerto sin zanahorias. Algo que no es
+                    cuestión de capricho sino, fundamentalmente, de la increíble riqueza de nutrientes de
+                    este cultivo y su versatilidad en la cocina. <br>
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Ajo</h3>
+                <img src="/img/Ajo.png" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    Antes de saber cómo plantar ajos, debes conocer que hay dos maneras de hacerlo: con
+                    semillas o plantando directamente unos dientes de ajo. Sin embargo, lo más fácil y
+                    habitual es plantar ajos sin semillas, es decir, enterrando dientes de ajo.
+                    <br>
+                    Para plantar un diente de ajo, el suelo debe estar previamente abonado y removido. Si es
+                    muy ligero, se recomienda agregar un buen compost o una capa de estiércol para optimizar
+                    la cosecha. Debes elegir un lugar con mucho sol, ya que es muy beneficioso para la
+                    planta, pero tampoco debe exponerse al calor excesivo.
+                    <br>
+                </p><br>
+            </div>
+            <div class="carousel-item">
+                <h3>Piquín</h3>
+                <img src="/img/Piquín.jpg" class="d-block w-100" alt="..." style="width: 50%;">
+                <br>
+                <p>
+                    La planta Pequin tiene una cosecha abundante de chiles muy pequeños. Al igual que el
+                    Chiltepin, el Pequin pertenece a los pimientos “de aves” (como el Bird’s Eye Demon).
+                    Esta variedad es muy similar a las variedades silvestres originales. Los pimientos son
+                    muy picantes y decoloran de verde a naranja y finalmente a rojo durante la maduración.
+                    El Pequin requiere paciencia. Solamente se puede cosechar después de aproximadamente 100
+                    días después de la germinación. En el segundo año en general la planta genera más
+                    frutos. La planta tendrá que pasar el invierno en el interior. Sobre todo en su segundo
+                    año la planta puede llegar a ser especialmente grande: alrededor de 1,20 m.
+                </p><br>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
